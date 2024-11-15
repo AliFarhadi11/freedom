@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Freedom</title>
@@ -10,69 +10,150 @@
   <body class="bg-slate-100">
     <main class="min-h-screen w-full relative">
       <aside
-        class="p-3 my-10 w-4/5 bg-blue-600 text-white md:w-[150px] h-auto flex flex-col gap-2 rounded-xl shadow-lg shadow-blue-600/40 md:sticky relative md:left-10 md:top-10 transition mx-auto md:mx-0"
+        class="p-3 md:my-0 my-10 w-4/5 bg-blue-600 text-white md:w-[150px] h-auto flex flex-col gap-2 rounded-xl md:sticky relative md:left-10 md:top-10 transition mx-auto md:mx-0"
       >
-        <div class="flex items-center gap-2">
-          <span>X: -13</span>
+        <div class="flex items-center gap-2 italic">
+          <span>X : -13</span>
         </div>
-        <div class="flex items-center gap-2">
-          <span>y: -20</span>
+        <div class="flex items-center gap-2 italic">
+          <span>y : -15</span>
         </div>
-        <div class="flex items-center gap-2">
-          <span>z: -15</span>
+        <div class="flex items-center gap-2 italic">
+          <span>z : -20</span>
         </div>
       </aside>
 
-      <div class="max-w-[500px] mx-auto w-full px-2">
-        <h1 class="text-center text-4xl sm:text-5xl mb-20 uppercase text-blue-600">Freedom 🕊</h1>
+      <div class="max-w-[500px] mx-auto w-full px-4">
+        <h1 class="text-center text-4xl sm:text-5xl mb-20 uppercase text-blue-600 font-black">Freedom 🕊</h1>
         <div class="flex flex-col gap-3">
-          <p class="text-blue-600 text-3xl sm:text-4xl">if X:</p>
-          <div class="flex items-center justify-center gap-2.5 mb-10 pb-5 border-b border-blue/10">
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+          <p class="text-blue-600 text-3xl sm:text-4xl font-bold">if X:</p>
+          <div class="flex items-center justify-center gap-2.5 mb-5 pb-5 border-b border-blue/10" id="x">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="day"
+            >
               <span>12</span>
               d
             </div>
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="hour"
+            >
               <span>12</span>
               h
             </div>
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="minute"
+            >
               <span>12</span>
               m
+            </div>
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="second"
+            >
+              <span>12</span>
+              s
             </div>
           </div>
-          <p class="text-blue-600 text-3xl sm:text-4xl">if Y:</p>
-          <div class="flex items-center justify-center gap-2.5 mb-10 pb-5 border-b border-blue/10">
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+          <p class="text-blue-600 text-3xl sm:text-4xl font-bold">if Y:</p>
+          <div class="flex items-center justify-center gap-2.5 mb-5 pb-5 border-b border-blue/10" id="y">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="day"
+            >
               <span>12</span>
               d
             </div>
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="hour"
+            >
               <span>12</span>
               h
             </div>
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="minute"
+            >
               <span>12</span>
               m
+            </div>
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="second"
+            >
+              <span>12</span>
+              s
             </div>
           </div>
-          <p class="text-blue-600 text-3xl sm:text-4xl">if Z:</p>
-          <div class="flex items-center justify-center gap-2.5 pb-5">
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+          <p class="text-blue-600 text-3xl sm:text-4xl font-bold">if Z:</p>
+          <div class="flex items-center justify-center gap-2.5 mb-5 pb-5 border-b border-blue/10" id="z">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="day"
+            >
               <span>12</span>
               d
             </div>
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="hour"
+            >
               <span>12</span>
               h
             </div>
-            <div class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-gray-900 text-2xl">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="minute"
+            >
               <span>12</span>
               m
+            </div>
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="second"
+            >
+              <span>12</span>
+              s
+            </div>
+          </div>
+          <p class="text-blue-600 text-3xl sm:text-4xl font-bold">else:</p>
+          <div class="flex items-center justify-center gap-2.5 pb-5" id="else">
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="day"
+            >
+              <span>12</span>
+              d
+            </div>
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="hour"
+            >
+              <span>12</span>
+              h
+            </div>
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="minute"
+            >
+              <span>12</span>
+              m
+            </div>
+            <div
+              class="p-2 rounded-md bg-white shadow-lg shadow-black/10 text-blue-400 font-bold text-2xl transition hover:scale-110 hover:-translate-y-1"
+              id="second"
+            >
+              <span>12</span>
+              s
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="./app.js"></script>
   </body>
 </html>
