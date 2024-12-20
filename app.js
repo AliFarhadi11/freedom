@@ -8,7 +8,8 @@ function countdown(targetDate, container) {
   const timeLeft = targetDate - now;
 
   if (timeLeft < 0) {
-    document.getElementById("countdown").innerHTML = "Time's up!";
+    const containerEl = document.getElementById(container);
+    containerEl.innerHTML = "Time's up! - ?";
     return;
   }
 
